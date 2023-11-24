@@ -1,0 +1,97 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans" , sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg) ;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-info
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 8000px;
+    height: 200px;
+    background-color:white;
+    margin: 0 50px;
+    padding: 0 100px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    font-size: 40px;
+    background:rgba(255, 255, 255, 0.872);
+    width: 60px;
+    height: 60px;
+    color: black;
+    transition: .3s linear;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card:hover .icon{
+    transform: scale(3);
+    opacity: 0.1;
+}
+
+.card-content h3, .card-content span 
+{
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.card-content h3
+{
+    top: 20px;
+    text-transform: uppercase;
+    color:rgb(211, 21, 53);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content span 
+{
+    bottom: 20px;
+    columns: white;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    .card{
+        flex: 100%;
+        max-width: 500px;
+    }
+}
